@@ -1,0 +1,269 @@
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+    .index-header {
+        padding:0 5%;
+    }
+    .nav-btn{
+        cursor:pointer;
+        z-index: 98;
+        display:block;
+    }
+    .index-gnb {
+        width:50%;
+        position:absolute;
+        top:10vh;
+        right:-50%;
+        transition:0.5s ease;
+    }
+    .index-gnb-view {
+        right:2%;
+    }
+    .index-gnb>ul {
+        display:flex;
+        flex-direction: column;
+        background: rgba(255,255,255,0.5);
+        padding:1% 2%;
+    }
+    .index-gnb>ul>li {
+        width:100%;
+        padding: 8% 0;
+        cursor: pointer;
+        transition: 0.35s;
+        color:#282623;
+        border-bottom:1px solid rgba(0,0,0,0.5);
+    }
+    .index-gnb>ul>li:last-child {
+        border:none;
+    }
+
+    /* 인트로 */
+    .intro>h2 {
+        font-size:8vh;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        z-index: 98;
+        padding:1%;
+    }
+    .intro>h2>span {
+        display: block;
+        letter-spacing: 5vw;
+    }
+    /* 어바웃 */
+    .about-inner {
+        width:100%;
+        height:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-textbox {
+        width:100%;
+        height:calc(100% - 10vh);
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position:absolute;
+        top:10vh;
+        left:0;
+        z-index: 1;
+        padding:0 2%;
+    }
+    .about-namebox {
+    position:static;
+    text-align: right;;
+    }
+    .about-namebox>h3 {
+        font-size:5.5vh;
+        
+    }
+    .about-namebox>p {
+        font-size:3vh;
+    }
+    .about-subbox {
+        width:100%;
+        position:static;
+        box-shadow: none;
+        background: none;
+        text-align: left;
+        color:rgba(255,255,255,0.8);
+    }
+    .about-subbox>h4 {
+        font-family:freesentation-7;
+        font-size: 3.8vh;
+        margin-bottom: 2%;
+        
+    }
+    .about-subbox>p {
+        font-size: 2.5vh;
+        padding:1%;
+    }
+    .about-imgbox {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+
+    /* 툴 */
+    .skills-content-tools {
+        width:100%;
+        height:calc(100% - 10vh);
+        /* border:1px solid blue; */
+        position:absolute;
+        top:60%;
+        transform: translateY(-50%);
+        align-content:baseline;
+    }
+    .skills-content-tools>h3 {
+        font-family:freesentation-7;
+        /* font-family:suite-extrabold; */
+        text-align: center;
+        font-size: 4.5vh;
+        margin-bottom: 5%;
+    }
+    .tools-inner {
+        width:100%;
+        /* border:1px solid red; */
+        display:flex;
+        flex-direction: column;
+    }
+    .tools-content {
+        width:100%;
+        height:45%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 3px auto;
+        padding:5px;
+    }
+    .tools-content>div {
+        margin:1% 1%;
+        
+    }
+    .tools01>div {
+        width:calc(100% / 6)
+    }
+    .tools02>div {
+        width:calc(100% / 4)
+    }
+    .tools-content>div>img {
+        width:75%;
+    }
+
+/* 스킬 */
+.skills {
+    height:100vh;
+    position:relative;
+}
+.skills-content-skills {
+    width:100%;
+    height:calc(100% - 10vh);
+    padding:1%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.skills-inner {
+    width:100%;
+    height:100%;
+}
+.skills-inner h3 {
+    font-size: 4vh;
+}
+.skills-hard {
+    width:100%;
+    padding:0;
+}
+.hard-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hard-inner>div {
+    width:calc(100% / 3);
+    border:1px solid rgba(0,0,0,0.1);
+    padding:1.5% 1%;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hard-inner>div:nth-child(1),
+.hard-inner>div:nth-child(2) {
+    width:calc(100% / 2);
+}
+
+.hard-inner>div img {
+    display: block;
+    width:40%;
+    object-fit: cover;
+    padding:5px;
+    margin:25% auto;
+    /* border: 1px solid red;; */
+}
+.hard-inner>div h4 {
+    font-family:freesentation-2;
+    text-align: center;
+    width:100%;
+    padding:0 0 5px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.hard-inner>div p {
+    font-family:freesentation-5;
+    text-align: center;
+    padding:5% 0;
+    border-top:1px solid rgba(0,0,0,0.1);
+    
+}
+.skills-soft {
+    width:100%;
+    padding:1%;
+    /* border:1px solid white; */
+}
+.soft-inner {
+    display: table;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+.soft-inner>div {
+    display: table-row;
+    vertical-align: middle;
+    text-align: center;
+    border-right:1px solid #dad9d8;
+    padding:2% 1%;
+    background: rgba(255,255,255,0.8);
+}
+.soft-table-cell:nth-child(1),
+.soft-table-cell:nth-child(2),
+.soft-table-cell:nth-child(3) {
+    display: table-cell;
+}
+.soft-table-cell:nth-child(4),
+.soft-table-cell:nth-child(5),
+.soft-table-cell:nth-child(6) {
+    display: table-cell;
+}
+
+.soft-inner>div img {
+    display: block;;
+    width:28%;
+    margin: auto;
+}
+.soft-inner>div p {
+    font-family:freesentation-5;
+    margin:10% 0 0;
+    padding:2% 0;
+}
+
+/* 포트폴리오 */
+
+
+
+
+} 

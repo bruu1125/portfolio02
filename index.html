@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <!-- css -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/mediaquery-smartphone.css">
     <!-- AOS 라이브러리 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -16,6 +17,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- 자바스크립트 -->
     <script src="js/index.js"></script>
+    <!-- <script src="js/mediaquery-phone.js"></script> -->
     
     <title>HYEON</title>
 </head>
@@ -28,6 +30,9 @@
                     HYEON
                 </a>
             </h1>
+            <button class="nav-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
             <nav class="index-gnb">
                 <ul>
                     <li id="aboutBtn">ABOUT</li>
@@ -126,27 +131,27 @@
                         <div class="skills-soft">
                             <h3>Soft Skills</h3>
                             <div class="skills-content soft-inner">
-                                <div>
+                                <div class="soft-table-cell">
                                     <img src="img/skills/soft01.png" alt="책임감">
                                     <p>책임감</p>
                                 </div>
-                                <div>
+                                <div class="soft-table-cell">
                                     <img src="img/skills/soft02.png" alt="꼼꼼함">
                                     <p>꼼꼼함</p>
                                 </div>
-                                <div>
+                                <div class="soft-table-cell">
                                     <img src="img/skills/soft03.png" alt="팀워크">
                                     <p>팀워크</p>
                                 </div>
-                                <div>
+                                <div class="soft-table-cell">
                                     <img src="img/skills/soft04.png" alt="적응력">
                                     <p>적응력</p>
-                                </div>
-                                <div>
+                                </div class="soft-table-cell">
+                                <div class="soft-table-cell">
                                     <img src="img/skills/soft05.png" alt="창의성">
                                     <p>창의성</p>
                                 </div>
-                                <div>
+                                <div class="soft-table-cell">
                                     <img src="img/skills/soft06.png" alt="커뮤니케이션">
                                     <p>커뮤니케이션</p>
                                 </div>
@@ -165,29 +170,29 @@
                             <div><img src="img/portfolio/p01.png" alt=""></div>
                             <h3>팀프로젝트 | Audi</h3>
                         </article> -->
-                        <article class="webcon web01" data-category="팀프로젝트" data-pftype="Renewal" data-title="Audi Korea" data-link="#">
+                        <article class="webcon web01" data-category="팀프로젝트" data-pftype="Renewal" data-title="Audi Korea" data-link="https://bruu1125.github.io/Audi/">
                             <div><img src="img/portfolio/p01.png" alt=""></div>
-                            <h3>프로젝트 | 아우디</h3>
+                            <h3>팀프로젝트 | 아우디코리아 리뉴얼</h3>
                         </article>
-                        <article class="webcon web02" data-category="개인작업" data-pftype="Creation" data-title="VENTO" data-link="#">
+                        <article class="webcon web02" data-category="개인작업" data-pftype="Creation" data-title="VENTO" data-link="https://bruu1125.github.io/VENTO/">
                             <div><img src="img/portfolio/p02.png" alt=""></div>
-                            <h3>Lorem, ipsum dolor.</h3>
+                            <h3>개인작업 | 가구 사이트 창작</h3>
                         </article>
                         <article class="webcon web03" data-category="개인작업" data-pftype="Renewal" data-title="복순도가" data-link="#">
                             <div><img src="img/portfolio/main02.jpg" alt=""></div>
-                            <h3>Lorem, ipsum dolor.</h3>
+                            <h3>개인작업 | 복순도가 리뉴얼</h3>
                         </article>
                         <article class="webcon web04" data-category="개인작업" data-pftype="Creation" data-title="준비중입니다." data-link="#">
                             <div><img src="img/portfolio/main03.jpg" alt=""></div>
-                            <h3>Lorem, ipsum dolor.</h3>
+                            <h3>&nbsp;</h3>
                         </article>
                         <article class="webcon web05" data-category="개인작업" data-pftype="Creation" data-title="준비중입니다." data-link="#">
                             <div><img src="img/portfolio/main04.jpg" alt=""></div>
-                            <h3>TLorem, ipsum dolor.</h3>
+                            <h3>&nbsp;</h3>
                         </article>
                         <article class="webcon web06" data-category="개인작업" data-pftype="Creation" data-title="준비중입니다." data-link="#">
                             <div><img src="img/intro01.jpg" alt=""></div>
-                            <h3>TeaLorem, ipsum dolor.</h3>
+                            <h3>&nbsp;</h3>
                         </article>
                     </div>
                     <div class="pf-btn">
@@ -208,7 +213,7 @@
                             <p class="pf-type"></p>
                             <p class="pf-title"></p>
                         </div>
-                        <a href="#">VIEW</a>
+                        <a id="pf-viewBtn" target="_blank">VIEW</a>
                     </div>
                 </div>
                 </div>
