@@ -10,11 +10,16 @@ $(document).ready(function() {
     function checkScroll() {
         if ($(window).scrollTop() > 200) {
             $(".index-header").addClass("header-scroll");
+            $(".nav-btn span").addClass("nav-btn-scroll");
         } else {
             $(".index-header").removeClass("header-scroll");
+            $(".nav-btn span").removeClass("nav-btn-scroll");
         }
     }
-
+    $('.nav-btn').on('click', function(){
+        $('.index-gnb').toggleClass('index-gnb-view');
+    })
+    
     // 페이지 로드 시 스크롤 위치 체크
     $(window).on('load', checkScroll);
 
@@ -169,7 +174,8 @@ document.addEventListener("DOMContentLoaded", function() {
         pfViewImg.src = selectedImageSrc;
         // .pf-view-sub의 내용 업데이트
         updateSubContent(category, type, title, link);
-            
+        
+        
         articles.forEach(article => {
             article.style.opacity = 0.5;
             article.style.filter= 'blur(0.5px) brightness(0.6)';
